@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Easy Gadgets </title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- ======= NAVBAR ======= -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html">Easy Gadgets </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="iphones.html">iPhones</a></li>
+        <li><a href="android.html">Android</a></li>
+        <li><a href="laptops.html">Laptops</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="whatsapp-btn">
+        <a href="#" onclick="message()">💬 Chat on WhatsApp</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======= CONTACT SECTION ======= -->
+  <section class="contact">
+    <div class="contact-container">
+      <h1>Contact Easy Gadgets Store</h1>
+      <p>Have a question, complaint, or want to make a purchase? Reach out to us below!</p>
+
+      <div class="contact-info">
+        <div class="info-box">
+          <h3>📞 Phone / WhatsApp</h3>
+          <p><a href="#" onclick="message()">Chat with us on WhatsApp</a></p>
+        </div>
+
+        <div class="info-box">
+          <h3>📧 Email</h3>
+          <p><a href="mailto:support@easygadgetsstore.com">support@easygadgetsstore.com</a></p>
+        </div>
+
+        <div class="info-box">
+          <h3>📍 Address</h3>
+          <p>Garrison, Port Harcourt, Nigeria</p>
+        </div>
+      </div>
+
+      <h2>Send us a message</h2>
+      <form id="contactForm" onsubmit="sendMessage(event)">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" required placeholder="Enter your name">
+
+        <label for="message">Your Message</label>
+        <textarea id="message" required placeholder="Type your message here..."></textarea>
+
+        <button type="submit" class="send-btn">Send Message on WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer>
+    <div class="footer-links">
+      <a href="about.html">About Us</a> |
+      <a href="terms.html">Terms & Conditions</a> |
+      <a href="privacy.html">Privacy Policy</a> |
+      <a href="retrun.html">Returns Policy</a>
+    </div>
+    <p>© 2025 Easy Gadgets Store. All rights reserved.</p>
+  </footer>
+</body>
+</html>
