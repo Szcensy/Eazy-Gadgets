@@ -1315,3 +1315,79 @@ body::before {
     padding: 10px 20px;
   }
 }
+/* ======= PRODUCT GRID ======= */
+.products {
+  padding: 60px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #00296b;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsive grid */
+  gap: 20px;
+  justify-content: center;
+  align-items: start;
+}
+
+.product {
+  background: #f9fafc;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain; /* ensures image doesn’t stretch */
+  border-radius: 10px;
+}
+
+.product h3 {
+  margin: 10px 0 5px;
+  color: #00296b;
+  font-size: 1.1rem;
+}
+
+.product p {
+  color: #333;
+  font-weight: 600;
+}
+
+/* ======= MOBILE RESPONSIVE ======= */
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row on phones */
+    gap: 15px;
+  }
+
+  .product img {
+    height: 150px;
+  }
+
+  .product h3 {
+    font-size: 1rem;
+  }
+
+  .product p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr 1fr; /* keeps 2 items per row even on small phones */
+  }
+}
